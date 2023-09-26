@@ -1,0 +1,182 @@
+{
+  "facilities": [
+    {
+      "id": 1,
+      "title": "Facility 1",
+      "roomSize": 40,
+      "image": "/images/page2_img1.jpg",
+      "floor": 2,
+      "areaOfPool": 20.5
+    },
+    {
+      "id": 2,
+      "title": "Facility 2",
+      "roomSize": 40,
+      "image": "/images/page2_img4.jpg",
+      "floor": 2,
+      "areaOfPool": 20.5
+    },
+    {
+      "id": 3,
+      "title": "Facility 2",
+      "roomSize": 40,
+      "image": "/images/page2_img2.jpg",
+      "floor": 2,
+      "areaOfPool": 20.5
+    },
+    {
+      "id": 4,
+      "title": "Facility 2",
+      "roomSize": 40,
+      "image": "/images/page2_img3.jpg",
+      "floor": 2,
+      "areaOfPool": 20.5
+    },
+    {
+      "id": 5,
+      "title": "Facility 2",
+      "roomSize": 40,
+      "image": "/images/page2_img6.jpg",
+      "floor": 2,
+      "areaOfPool": 20.5
+    },
+    {
+      "id": 6,
+      "title": "Facility 2",
+      "roomSize": 40,
+      "image": "/images/page2_img7.jpg",
+      "floor": 2,
+      "areaOfPool": 20.5
+    },
+    {
+      "id": 7,
+      "title": "Facility 2",
+      "roomSize": 40,
+      "image": "/images/page2_img8.jpg",
+      "floor": 2,
+      "areaOfPool": 20.5
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "fullName": "Olivia Davis",
+      "birthday": "25/09/1995",
+      "gender": 0,
+      "idCard": "293847561",
+      "phoneNumber": "0967890123",
+      "email": "olivia.davis@example.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "address": "234 Birch Road, Countryside"
+    },
+    {
+      "id": 2,
+      "fullName": "John Smith",
+      "birthday": "15/01/1985",
+      "gender": 1,
+      "idCard": "201797881",
+      "phoneNumber": "0969980926",
+      "email": "john.smith@example.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "address": "123 Main Street, Cityville"
+    },
+    {
+      "id": 3,
+      "fullName": "Sarah Johnson",
+      "birthday": "22/03/1990",
+      "gender": 0,
+      "idCard": "298374621",
+      "phoneNumber": "0987654321",
+      "email": "sarah.johnson@example.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "address": "456 Elm Street, Townsville"
+    },
+    {
+      "id": 4,
+      "fullName": "Michael Davis",
+      "birthday": "05/11/1978",
+      "gender": 1,
+      "idCard": "176543298",
+      "phoneNumber": "0912345678",
+      "email": "michael.davis@example.com",
+      "customerType": {
+        "id": 2,
+        "name": "Platinum"
+      },
+      "address": "789 Oak Avenue, Villagetown"
+    },
+    {
+      "fullName": "iyg",
+      "birthday": "2023-08-29",
+      "gender": "0",
+      "idCard": "kubbj",
+      "phoneNumber": "1238879",
+      "email": "nghiaphan33dn@gmail.com",
+      "customerType": {
+        "id": 4,
+        "name": "Silver"
+      },
+      "address": "852 Ngo Tat To",
+      "id": 5
+    },
+    {
+      "fullName": "bkjjb",
+      "birthday": "2023-08-29",
+      "gender": "0",
+      "idCard": "hjgjgj",
+      "phoneNumber": "0852177963",
+      "email": "nghiaphan33dn@gmail.com",
+      "customerType": {
+        "id": 1,
+        "name": "Diamond"
+      },
+      "address": "852 Be Van Dan",
+      "id": 6
+    },
+    {
+      "fullName": "asd",
+      "birthday": "2023-09-08",
+      "gender": "0",
+      "idCard": "hjvjbjb",
+      "phoneNumber": "0852177963",
+      "email": "nghiaphan33dn@gmail.com",
+      "customerType": {
+        "id": 2,
+        "name": "Gold"
+      },
+      "address": "852 Be Van Dan",
+      "id": 7
+    }
+  ],
+  "customerType": [
+    {
+      "id": 1,
+      "name": "Diamond"
+    },
+    {
+      "id": 2,
+      "name": "Platinum"
+    },
+    {
+      "id": 3,
+      "name": "Gold"
+    },
+    {
+      "id": 4,
+      "name": "Silver"
+    },
+    {
+      "id": 5,
+      "name": "Member"
+    }
+  ]
+}
