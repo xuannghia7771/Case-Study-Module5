@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import * as facilityService from "../../services/FacilityService"
 import Header from "../layouts/Header";
+import Slider from "../inc/Slider";
 
 export default function FacilityList() {
     const [facilities, setFacilities] = useState([]);
@@ -15,6 +16,7 @@ export default function FacilityList() {
 
     return (
         <>
+            <Slider/>
             {/*==============================Content=================================*/}
             <div className="content">
                 <div className="ic">

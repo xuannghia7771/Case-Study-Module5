@@ -59,34 +59,6 @@
   ],
   "customers": [
     {
-      "id": 1,
-      "fullName": "Olivia Davis",
-      "birthday": "25/09/1995",
-      "gender": 0,
-      "idCard": "293847561",
-      "phoneNumber": "0967890123",
-      "email": "olivia.davis@example.com",
-      "customerType": {
-        "id": 2,
-        "name": "Platinum"
-      },
-      "address": "234 Birch Road, Countryside"
-    },
-    {
-      "id": 2,
-      "fullName": "John Smith",
-      "birthday": "15/01/1985",
-      "gender": 1,
-      "idCard": "201797881",
-      "phoneNumber": "0969980926",
-      "email": "john.smith@example.com",
-      "customerType": {
-        "id": 2,
-        "name": "Platinum"
-      },
-      "address": "123 Main Street, Cityville"
-    },
-    {
       "id": 3,
       "fullName": "Sarah Johnson",
       "birthday": "22/03/1990",
@@ -115,45 +87,17 @@
       "address": "789 Oak Avenue, Villagetown"
     },
     {
-      "fullName": "iyg",
-      "birthday": "2023-08-29",
-      "gender": "0",
-      "idCard": "kubbj",
-      "phoneNumber": "1238879",
+      "fullName": "Denny Nguyen",
+      "birthday": "2023-09-07",
+      "gender": 0,
+      "idCard": "201797881",
+      "phoneNumber": "0915471852",
       "email": "nghiaphan33dn@gmail.com",
       "customerType": {
         "id": 4,
         "name": "Silver"
       },
-      "address": "852 Ngo Tat To",
-      "id": 5
-    },
-    {
-      "fullName": "bkjjb",
-      "birthday": "2023-08-29",
-      "gender": "0",
-      "idCard": "hjgjgj",
-      "phoneNumber": "0852177963",
-      "email": "nghiaphan33dn@gmail.com",
-      "customerType": {
-        "id": 1,
-        "name": "Diamond"
-      },
-      "address": "852 Be Van Dan",
-      "id": 6
-    },
-    {
-      "fullName": "asd",
-      "birthday": "2023-09-08",
-      "gender": "0",
-      "idCard": "hjvjbjb",
-      "phoneNumber": "0852177963",
-      "email": "nghiaphan33dn@gmail.com",
-      "customerType": {
-        "id": 2,
-        "name": "Gold"
-      },
-      "address": "852 Be Van Dan",
+      "address": "254 Le Dai Hanh",
       "id": 7
     }
   ],
@@ -177,6 +121,88 @@
     {
       "id": 5,
       "name": "Member"
+    }
+  ],
+  "contracts": [
+    {
+      "id": 1,
+      "contractCode": "HD-5214",
+      "startDate": "2022-09-03",
+      "endDate": "2022-11-01",
+      "deposit": 321,
+      "totalCost": 1080
+    },
+    {
+      "id": 2,
+      "contractCode": "HD-9876",
+      "startDate": "2022-08-15",
+      "endDate": "2022-10-15",
+      "deposit": 500,
+      "totalCost": 1500
+    },
+    {
+      "id": 3,
+      "contractCode": "HD-3456",
+      "startDate": "2022-07-01",
+      "endDate": "2022-07-31",
+      "deposit": 200,
+      "totalCost": 800
+    },
+    {
+      "id": 4,
+      "contractCode": "HD-1234",
+      "startDate": "2022-10-10",
+      "endDate": "2022-12-10",
+      "deposit": 400,
+      "totalCost": 1200
+    },
+    {
+      "id": 5,
+      "contractCode": "HD-5678",
+      "startDate": "2022-11-20",
+      "endDate": "2023-01-20",
+      "deposit": 250,
+      "totalCost": 1000
+    },
+    {
+      "id": 6,
+      "contractCode": "HD-7890",
+      "startDate": "2022-12-05",
+      "endDate": "2023-02-05",
+      "deposit": 300,
+      "totalCost": 900
+    },
+    {
+      "id": 7,
+      "contractCode": "HD-2345",
+      "startDate": "2022-09-15",
+      "endDate": "2022-12-15",
+      "deposit": 450,
+      "totalCost": 1350
+    },
+    {
+      "id": 8,
+      "contractCode": "HD-6789",
+      "startDate": "2022-08-01",
+      "endDate": "2022-10-31",
+      "deposit": 350,
+      "totalCost": 1050
+    },
+    {
+      "id": 9,
+      "contractCode": "HD-4321",
+      "startDate": "2022-11-05",
+      "endDate": "2023-01-05",
+      "deposit": 275,
+      "totalCost": 1100
+    },
+    {
+      "id": 10,
+      "contractCode": "HD-8765",
+      "startDate": "2022-07-20",
+      "endDate": "2022-09-20",
+      "deposit": 375,
+      "totalCost": 1125
     }
   ]
 }

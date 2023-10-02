@@ -1,29 +1,55 @@
 import * as customerService from "../../services/CustomerService"
 import {useEffect, useState} from "react";
-import "bootstrap/dist/css/bootstrap.css"
 import {Link} from "react-router-dom";
 import {useNavigate} from "react-router";
+import {ModalDelete} from "./ModalDelete";
+import {BiSolidEdit} from "react-icons/bi";
+import {MdDeleteForever} from "react-icons/md";
 
 export default function CustomerList() {
     const [customers, setCustomers] = useState([]);
     const navigate = useNavigate();
+    // xoa modal
+    const [modalStatus, setModalStatus] = useState(false);
+    const [selectCustomer, setSelectCustomer] = useState(null);
+    // const [name, setName] = useState("")
+
+
     useEffect(() => {
         getAllCustomer();
-    }, []);
+        //searchName();
+    }, [
+        // name
+    ]);
+
+    // const searchName = async () => {
+    //     setCustomers(await customerService.getAllByName(name));
+    // }
 
     const getAllCustomer = async () => {
         setCustomers(await customerService.getAll());
-        console.log(customers)
+    }
+
+    //xoa modal
+    const handleModal = (e) => {
+        setSelectCustomer(e)
+        setModalStatus(true);
+    }
+    const closeModal = () => {
+        setSelectCustomer(null);
+        setModalStatus(false);
     }
 
     return (
         <>
             <h1>CUSTOMER LIST</h1>
-            <button
-                onClick={() => navigate('/customers/add')}
-                className="btn btn-primary mb-4"
-            >Create New Customer
-            </button>
+            {/*<button*/}
+            {/*    onClick={() => navigate('/customers/add')}*/}
+            {/*    className="btn btn-primary mb-4"*/}
+            {/*>Create New Customer*/}
+            {/*</button>*/}
+            {/*<div className="text-end"><input type="text" onChange={(e) => setName(e.target.value)}/></div>*/}
+
             <table className="table table-hover">
                 <thead>
                 <tr>
@@ -50,24 +76,25 @@ export default function CustomerList() {
                             <td>{e.idCard}</td>
                             <td>{e.phoneNumber}</td>
                             <td>{e.email}</td>
-                            <td>{e.customerType.name}</td>
+                            <td>{e.customerType.typeName}</td>
                             <td>{e.address}</td>
                             <td>
-                                <button
-                                    className="btn btn-primary"
-                                    onClick={()=>navigate(`/customers/edit/${e.id}`)}
-                                >Edit</button>
+                                <Link to={`/customers/edit/${e.id}`}>
+                                    <BiSolidEdit size='32px' color="green"/>
+                                </Link>
                                 &nbsp;
-                                <button
-                                    className="btn btn-danger"
-                                    onClick={()=>navigate(`/customers/edit/${e.id}`)}
-                                >Delete</button>
+                                <MdDeleteForever
+                                    size='32px' color="red"
+                                    onClick={() => handleModal(e)}/>
                             </td>
                         </tr>
                     ))
                 }
                 </tbody>
             </table>
+            <ModalDelete show={modalStatus}
+                         handleClose={closeModal}
+                         selectCustomer={selectCustomer}/>
         </>
     )
 }
